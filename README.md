@@ -1,55 +1,50 @@
-# AI Based Disaster Relief and Management System
+Empowering Rapid Disaster Detection, Response & Relief through Intelligence.
 
-🔍 Summary of DRAMS (Disaster Relief and Management System)
-DRAMS is an AI-powered decision support system designed to optimize disaster response operations during all phases of a natural calamity:
+Raksha-Pulse is an AI-driven disaster management platform that supports government authorities and emergency responders across all stages of a natural or man-made crisis. From real-time detection to post-disaster recovery, the system integrates computer vision, clustering algorithms, and smart routing to ensure timely action and resource deployment.
 
-1️⃣ Pre-Disaster (Detection & Prediction)
+🔁 System Capabilities
+🔹 Pre-Disaster — Detection & Prediction
+Utilizes Deep Learning (CNNs, VGG-16) on live CCTV feeds to detect disasters like floods and fires.
 
-Uses Deep Learning (CNNs) and CCTV footage to detect disasters in real-time.
-Predicts evacuation zones based on impact estimates & population clusters.
-2️⃣ During Disaster (Alert & Rescue Operations)
+Predicts potential evacuation zones using impact analysis and population density data.
 
-Sends real-time alerts to affected users via Aadhaar, PAN & Aarogya Setu.
-Uses DBSCAN clustering to identify high-distress areas.
-Computes optimal rescue routes using GRASP & VND algorithms.
-3️⃣ Post-Disaster (Relief & Recovery)
+🔹 During Disaster — Alerts & Rescue Operations
+Sends automated alerts to users (linked via Aadhaar, PAN, Aarogya Setu).
 
-Restores connectivity by planning road reconstruction based on real-time data.
-Deploys relief vehicles efficiently using AI-based routing algorithms.
-🚀 Key Technologies Used:
-✅ Deep Learning (CNNs, VGG-16) for disaster detection.
-✅ DBSCAN clustering for identifying high-risk zones.
-✅ GRASP & VND routing algorithms for optimized vehicle deployment.
-✅ Kubernetes & Django for scalable system deployment.
+Identifies high-stress locations using DBSCAN clustering.
 
-🌍 Real-World Use Cases:
-✔️ Flash Floods – Real-time tracking & evacuation planning.
-✔️ COVID-19 Prevention – Crowd detection & social distancing enforcement.
-✔️ City Fires – Automated alerts & rescue coordination.
+Optimizes rescue paths with GRASP & VND route planning algorithms.
 
+🔹 Post-Disaster — Relief & Recovery
+Plans road reconstructions dynamically using damage estimation.
 
+Routes relief vehicles optimally based on updated real-time conditions.
 
-## Model Trained files
-https://drive.google.com/drive/folders/15Vjd-xRUxw0oky-7bXOGojqHF8vV-BLg?usp=sharing
+🧠 Core Technologies
+✅ CNNs & VGG-16 for real-time video-based disaster detection
 
+✅ DBSCAN for hotspot identification
 
+✅ GRASP + VND for route optimization
 
-## City-Fire Detector
-Download the fire.model from the above drive link and add it in the output folder. \
-To check its working run the predict_fire.py from command line with the required arguments ( Commented at the beginning of the .py file ). \
-Input video can be taken from the videos folder by videos/( any fire video.mp4).
+✅ Kubernetes + Django for scalable deployment
 
+🔧 Modules Overview
+🔥 Fire Detector
+Place fire.model in the output/ folder.
 
-## Flood-Detector
-Download the flood.model from the above drive link and add it in the output folder. \
-To check its working run the predict_flood.py from command line with the required arguments ( Commented at the beginning of the .py file ). \
-Input video can be taken from the videos folder by videos/(any flood video.mp4).
+Run predict_fire.py with the desired video file from videos/.
 
-## Social-Distance-Detector
-Copy the yolov3.weights file from the above drive link and paste in Social-Disatance-Detector/yolo-coco/ \
-For Using GPU - Go to Social-Disatance-Detector/utils/social_distancing_config.py and change USE_GPU to True
-Run the social_distance_detector.py from command line with the required arguments ( Commented at begining of .py file) 
+🌊 Flood Detector
+Place flood.model in the output/ folder.
 
+Run predict_flood.py with a video from the videos/ folder.
 
+🧍‍♂️ Social Distance Detector
+Copy yolov3.weights into Social-Disatance-Detector/yolo-coco/.
+
+Enable GPU by setting USE_GPU = True in utils/social_distancing_config.py.
+
+Run social_distance_detector.py with appropriate arguments.
 
 
